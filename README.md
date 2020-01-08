@@ -1,3 +1,6 @@
+live demo:
+https://alekseyfedorov27.github.io/Avia-Tickets/dist/index.html
+
 # Avia-Tickets
 Avia Tickets vanila-js progect
 
