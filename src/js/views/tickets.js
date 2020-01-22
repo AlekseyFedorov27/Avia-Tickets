@@ -67,10 +67,10 @@ class TicketsUI {
           <span class="ticket-transfers">Пересадок: ${ticket.transfers}</span>
           <span class="ticket-flight-number">Номер рейса: ${ticket.flight_number}</span>
           </div>
-          <a data-user-favotite='${JSON.stringify(ticket)}'
-            class="waves-effect waves-light btn-small green darken-1 add-favorite ml-auto add-favorite"
-            >Add to favorites</a
-          >
+          <a data-user-favotite=${ticket.id_ticket}
+            class="waves-effect waves-light btn-small green darken-1 add-favorite ml-auto add-favorite">
+            Add to favorites
+            </a>
         </div>
         </div>        
       </div>

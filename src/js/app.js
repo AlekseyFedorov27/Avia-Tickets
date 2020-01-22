@@ -15,8 +15,10 @@ document.addEventListener('DOMContentLoaded', e => {
   //add favorite
   ticketsUI.container.addEventListener('click', (e)=>{
     if(e.target.classList.contains('add-favorite')){
-      let ticket = JSON.parse(e.target.dataset.userFavotite);
-      favoriteTickets.setFavorite(ticket);
+      //ищем по id нужный билет и записываем в избранные
+      const favTicket = locations.lastSearch.filter( item => item.id_ticket == e.target.dataset.userFavotite);
+      console.log(favTicket)
+      favoriteTickets.setFavorite(...favTicket);
     }
   })
 

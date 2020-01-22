@@ -93,6 +93,7 @@ class Locations {
       // console.log(ticket);
       return {
         ...ticket,
+        id_ticket: Math.random(), //генерируем уникальный id для билетов
         origin_name: this.getCityNameByCode(ticket.origin),
         destination_name: this.getCityNameByCode(ticket.destination),
         airline_logo: this.getAirlineLogoByCode(ticket.airline),
